@@ -7,7 +7,7 @@ pipeline {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
         NEXUS_URL = "3.250.179.0:8081"
-        NEXUS_REPOSITORY = "mvn-rlease"
+        NEXUS_REPOSITORY = "java-project"
         NEXUS_CREDENTIAL_ID = "nexus"
     }
     stages {
