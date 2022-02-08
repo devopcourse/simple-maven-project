@@ -20,5 +20,12 @@ pipeline {
                 }
             }
         }
+        stage ('Scan') {
+            steps {
+               withSonarQubeEnv(installationName: 'sonarqube', credentialsId: 'sonarqube') {
+                sh 'mvn sonar:sonar'
+                }
+            }
+       } 
     }
 }
